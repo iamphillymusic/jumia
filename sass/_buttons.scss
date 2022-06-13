@@ -1,0 +1,38 @@
+.btn {
+    display: flex;
+    border: none;
+    margin-top: -.5rem;
+    font-family: $font-primary;
+
+}
+
+
+.btn-icon {
+
+    border: none;
+    border-radius: 0;
+    height: 2px;
+    width: 2.5rem;
+    background-color: black;
+
+    &::before,
+    &::after {
+        content: "";
+        display: block;
+        background-color: black;
+        height: 2px;
+        width: 2.5rem;
+        
+    
+    }
+     
+
+    &::before {
+        transform: translateY(-.8rem);
+    }
+    &::after {
+        transform: translateY(.8rem);
+    }
+
+    
+}

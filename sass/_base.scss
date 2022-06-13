@@ -1,0 +1,55 @@
+$color-primary: rgba(123, 129, 121, 0.53);
+$color-primary-light: rgba(115, 118, 114, 0.53);
+$color-grey-light-1: #eeebea;
+$color-grey-light-2: #aaa;
+$color-grey-light-3: rgb(218, 213, 213);
+
+$color-grey-dark-1: #1b1b1c;
+$color-grey-dark-2: #383a3a;
+
+$font-primary: 'nunito', sans-serif;
+$font-display: 'josefin sans', sans-serif;
+ $color-black: #000;
+
+
+ $header-font: .9rem;
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+
+.container {
+    
+    background-color: $color-grey-light-1;
+    height: 90vh;
+
+}
+
+
+.content{
+    display:grid;
+    width:80vw;
+    border-radius: 100px;
+    margin: 0 auto;
+    gap: .2rem;
+    height: 85vh;
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    padding-bottom: 2.3rem;
+}
+
+.header-areaa{
+    align-content: start;
+}
+
+

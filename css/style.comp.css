@@ -51,18 +51,21 @@ html {
   border-left: 3px solid rgba(123, 129, 121, 0.53);
   display: flex;
   flex-direction: column;
-  justify-content: space-around; }
+  justify-content: space-around;
+  align-content: end; }
   .sidebar__box {
+    display: inline block;
     display: block;
     margin-bottom: 10px;
-    transition: all .4s; }
+    transition: translate .4s;
+    backface-visibility: hidden; }
     .sidebar__box:active,
     .sidebar__box:visited .sidebar__box:focus {
       color: rgba(123, 129, 121, 0.53);
-      transform: scaleX(-0.94); }
+      transform: translateY(-0.94px); }
     .sidebar__box:hover {
       color: rgba(123, 129, 121, 0.53);
-      transform: scaleX(1.2); }
+      transform: translateY(-2.2px); }
   .sidebar__align {
     display: flex;
     align-items: center; }
@@ -208,14 +211,16 @@ html {
   .footer__button {
     height: 2.3rem;
     width: 4.5rem;
-    transition: all .2s;
+    transition: translate .1s;
     background-color: transparent;
     color: #fff;
     border: 1px solid #fff;
     border-radius: 3px; }
     .footer__button:hover {
       transform: translateY(-3px);
-      box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2); }
+      box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2);
+      background-color: #fff;
+      color: black; }
     .footer__button:active, .footer__button:visited {
       transform: translateY(-1px); }
   .footer__download {

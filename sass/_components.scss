@@ -13,22 +13,27 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-content: end;
 
     &__box {
+        display: inline block;
         display: block;
         margin-bottom: 10px;
-        transition: all .4s;
+        transition: translate .4s;
+        backface-visibility: hidden;
 
         &:active,
         &:visited
         &:focus{
             color: $color-primary;
-            transform: scaleX(-.94);
+            transform: translateY(-.94px);
         }
 
         &:hover{
             color: $color-primary;
-            transform: scaleX(1.2);
+            transform: translateY(-2.2px);
+        
+            
         }
     }
     

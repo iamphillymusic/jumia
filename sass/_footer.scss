@@ -111,7 +111,7 @@
     &__button{
         height: 2.3rem;
         width: 4.5rem;
-        transition: all .2s;
+        transition: translate .1s;
         background-color: transparent;
         color: #fff;
         border: 1px solid #fff;
@@ -120,6 +120,9 @@
         &:hover{
             transform: translateY(-3px);
             box-shadow: 0 5px 10px rgba(#fff, .2);
+            background-color: #fff;
+            color: black;
+
         }
 
         &:active,
